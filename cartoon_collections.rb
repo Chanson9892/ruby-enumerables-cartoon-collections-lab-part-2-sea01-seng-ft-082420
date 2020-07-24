@@ -11,8 +11,9 @@ def summon_captain_planet(planeteer_calls)
   # Return a new array of the results
   calls = planeteer_calls
   calls.each do |element|
-    calls[element] "#{element}!"
+    calls[element] "#{element}!".capitalize
   end
+  calls
 end
 
 def long_planeteer_calls(planeteer_calls)
